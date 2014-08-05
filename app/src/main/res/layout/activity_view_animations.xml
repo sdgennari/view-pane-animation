@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The initial width of the FrameLayout is irrelevant -->
+
+    <FrameLayout
+        android:id="@+id/frame_zero"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:id="@+id/divider_01"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#A2A2A2"
+        android:layout_toRightOf="@id/frame_zero"/>
+
+    <FrameLayout
+        android:id="@+id/frame_one"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/divider_01"/>
+
+    <View
+        android:id="@+id/divider_12"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#A2A2A2"
+        android:layout_toRightOf="@id/frame_one"/>
+
+    <FrameLayout
+        android:id="@+id/frame_two"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/divider_12"/>
+
+</RelativeLayout>
